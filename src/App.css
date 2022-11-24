@@ -1,61 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
 
 :root {
-    --grey: rgb(125, 120, 120);
-    --white: rgb(248, 246, 242);
-    --darkgrey: rgb(116, 117, 123);
+  --grey: rgb(125, 120, 120);
+  --white: rgb(248, 246, 242);
+  --darkgrey: rgb(116, 117, 123);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
 }
 
 .wrap {
-    height: 100vh;
-    background-color: white;
+  height: 100vh;
+  background-color: white;
 
-    /* 계산기 중앙 정렬 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* 계산기 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calculator {
-    width: 350px;
-    height: 520px;
-    background-color: var(--white);
+  width: 350px;
+  height: 520px;
+  background-color: var(--white);
 
-    border-radius: 20px;
-    padding: 20px;
-    
-    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.5),
-    inset 3px 3px 3px #ffffff,
-    inset -3px -3px 3px rgba(111, 126, 145, 0.42);
+  border-radius: 20px;
+  padding: 20px;
 
-    /* 디스플레이, 버튼 컨테이너 세로 정렬 */
-    display: flex;
-    flex-direction: column;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.5), inset 3px 3px 3px #ffffff, inset -3px -3px 3px rgba(111, 126, 145, 0.42);
+
+  /* 디스플레이, 버튼 컨테이너 세로 정렬 */
+  display: flex;
+  flex-direction: column;
 }
 
 /* 디스플레이 */
 .display {
-    flex: 1 0 30%;
-    background-color: black;
-    border-radius: 20px;
+  flex: 1 0 30%;
+  background-color: black;
+  border-radius: 20px;
 
-    font-size: 2.5rem;
-    color: white;
+  font-size: 2.5rem;
+  color: white;
 
-    /* 숫자 왼쪽 가운데 정렬 */
-    display: flex;
-    /* justify-content: center; */
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 15px;
+  /* 숫자 왼쪽 가운데 정렬 */
+  display: flex;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
 }
 
 /* .inside_display {
@@ -72,22 +70,21 @@
 
 /* 버튼 컨테이너 */
 .button_container {
-    flex: 1 0 70%;
-    /* border: 1px solid red; */
-    padding-top: 10px;
+  flex: 1 0 70%;
+  /* border: 1px solid red; */
+  padding-top: 10px;
 
-    /* 버튼 5줄을 세로로 정렬 */
-    display: flex;
-    flex-direction: column;
+  /* 버튼 5줄을 세로로 정렬 */
+  display: flex;
+  flex-direction: column;
 }
 
 .rows {
-    flex: 1 0 10%;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    
+  flex: 1 0 10%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* .column {
@@ -98,24 +95,22 @@
 } */
 
 button {
-    border: none;
-    border-radius: 10px;
+  border: none;
+  border-radius: 10px;
 
-    width: 60px;
-    height: 50px;
+  width: 60px;
+  height: 50px;
 
-    box-shadow: inset 2px 2px 2px #ffffff,
-                inset -1.5px -1.5px 2px rgba(111, 126, 145, 0.42);
-    cursor: pointer;
+  box-shadow: inset 2px 2px 2px #ffffff, inset -1.5px -1.5px 2px rgba(111, 126, 145, 0.42);
+  cursor: pointer;
 
-    background: none;
-    font-size: 1.2rem;
+  background: none;
+  font-size: 1.2rem;
 }
 
 /* 버튼 눌릴 때 */
 button:active {
-    background-color: rgb(233, 233, 233);
-    color: rgb(176, 176, 176);
-    box-shadow: inset 2px 2px 2px rgba(154, 154, 154, 0.42),
-                inset -1.5px -1.5px 2px #ffffff;
+  background-color: rgb(233, 233, 233);
+  color: rgb(176, 176, 176);
+  box-shadow: inset 2px 2px 2px rgba(154, 154, 154, 0.42), inset -1.5px -1.5px 2px #ffffff;
 }
